@@ -24,7 +24,7 @@ class GazinJsonAction implements ServerMiddlewareInterface
 
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
-        $uri = "http://emerchalegre-com.umbler.net/dados.json";
+        $uri = "http://emerchalegre-bling-com.umbler.net/dados.json";
         $response = \Httpful\Request::get($uri)->send();
         //$JMS = $this->container->get(\JMS\Serializer\Serializer::class);
         $JMS = $this->container->get(\JMS\Serializer\Serializer::class);
